@@ -1,0 +1,17 @@
+body{
+	background-color: #ffffff;
+	font-family: 'josefin Sans', Sans-serif;}
+
+h1 {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #e0e0e0;
+    color: #353c4e;
+    font-family: 'josefin Sans', Sans-serif;
+    font-weight : bold;
+}  
+
+h5 {
+    font-family: 'josefin Sans', Sans-serif;
+    font-weight : bold;
+}   
