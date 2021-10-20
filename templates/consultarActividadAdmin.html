@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<title>Buscar Actividad</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../static/css/createActivity.css">
+
+</head>
+
+<body>	
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h1 class="text-center mt-5 font-weight-bold">Buscar Actividad</h1>
+			<hr class="bg-white">
+			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
+			<form>
+			</div>
+			</div>					
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Código de la asignatura*<br>
+					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
+                <label class="col-md-4">Código de actividad*<br>
+                    <input type="number" id="text" required="" placeholder="Ingrese el código que qasignó a su actividad"></label>
+			</div>
+						<div class="row">
+				<div class="col-md-3"></div>
+				<button class="btn btn-primary" style="width: 53.5%; position: center;">Buscar actividad</button>
+			</div>
+            <div class="card-deck mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                  <!-- <img src="../sttic/images/estudiante.png" class="img-fluid" alt="Información" height="260"> -->
+                 
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">CÓDIGO DE ASIGNATURA</th>
+                          <th scope="col">CÓDIGO DE ACTIVIDAD</th>
+                          <th scope="col">NOMBRE DE ACTIVIDAD</th>
+                          <th scope="col">DESCRIPCIÓN</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">15660</th>
+                          <td>00001</td>
+                          <td>ALGORITMOS SIMPLES</td>
+                          <td>Algoritmo simple para contar ocurrencias de un evento</td>
+                    
+                        </tr>
+                        <tr>
+                          <th scope="row">15661</th>
+                          <td>00005</td>
+                          <td>DERIVADAS PARCIALES</td>
+                          <td>Resolución de ejercicios prácticos</td>
+                    
+                        </tr>
+                        <tr>
+                          <th scope="row">15662</th>
+                          <td>00006</td>
+                          <td>VECTORES EN R3</td>
+                          <td>Resolución de ejercicios prácticos</td>
+                    
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                </div>
+                </div>
+              </div>
+			</form>
+      <div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+			<div class="card-footer text-center">
+			<a href="{{url_for('gestionActividades_Admin')}}"> 
+			<button id="btnDash" type="submit" class="btn btn-primary" style="width: 50%; position: center;">
+                Volver al panel de actividades y notas
+            </button>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>  

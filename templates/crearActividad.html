@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 	<title>Crear Actividad</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../static/css/createActivity.css">
+	
+
+</head>
+
+<body>	
+
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			
+			<h1 class="text-center mt-5 font-weight-bold">Crear Actividad</h1>
+			<hr class="bg-white">
+			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
+		
+
+			<form>
+			
+
+			</div>
+			</div>					
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Nombre de la actividad*<br>
+					<input type="text" id="text" required="" placeholder="Escriba el nombre de la actividad"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Código de la asignatura*<br>
+					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
+                <label class="col-md-4">Código de actividad*<br>
+                    <input type="number" id="text" required="" placeholder="Ingrese el código que quiere asignar a su actividad"></label>
+			</div>
+
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-8">Descripción de la actividad*<br>
+					<textarea id="descripcion" required="" placeholder="Escriba una breve descripción en este espacio" cols="48" rows="5"></textarea></label>
+			</div>
+
+				<div class="row">
+				<div class="col-md-3"></div>
+				<button class="btn btn-primary" style="width: 53.5%; position: center;">Crear actividad</button>
+                <br>
+                </div>
+                <br>
+			</div>
+			</form>
+			<!-- <div class="row">
+                <div class="col-md-3"></div>
+				<a href="{{url_for('gestionActividades_Profesor')}}"></a>
+                <button id="btnDash" type="submit" class="btn btn-primary" style="width: 53.5%; position: center;">
+                Volver a la pantalla anterior
+                </button>
+            </div> -->
+			<div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+			<div class="card-footer text-center">
+			<a href="{{url_for('gestionActividades_Profesor')}}"> 
+			<button id="btnDash" type="submit" class="btn btn-primary" style="width: 50%; position: center;">
+                Volver al panel de actividades y notas
+            </button>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+</body>
+</html>  

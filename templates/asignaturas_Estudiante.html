@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asignaturas</title>
+  <link rel="stylesheet" 
+  href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="../static/css/createActivity.css"> 
+</head>
+<body>
+<div class="container">
+  <br>
+  <br>
+  <h1>Módulo de Asignaturas</h1>
+  <h5 class="card-subtitle">A continuación entontrarás la lista de asignaturas, sus códigos e información asociada</h5>
+    <br>
+  <div class="card-deck mt-5">
+  <div class="card" style="width: 18rem;">
+    <div class="card-body">
+    <!-- <img src="../sttic/images/estudiante.png" class="img-fluid" alt="Información" height="260"> -->
+   
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">CÓDIGO</th>
+            <th scope="col">NOMBRE DE ASIGNATURA</th>
+            <th scope="col">CRÉDITOS</th>
+            <th scope="col">PROFESOR</th>
+            <th scope="col">UBICACIÓN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">15660</th>
+            <td>INTRODUCCIÓN A LA PROGRAMACIÓN</td>
+            <td>3</td>
+            <td>CARLOS REBOLLEDO</td>
+            <td>BLOQUE G -44G2</td>
+          </tr>
+          <tr>
+            <th scope="row">15661</th>
+            <td>CÁLCULO I</td>
+            <td>3</td>
+            <td>JHONATHAN DE LA ROSA</td>
+            <td>BLOQUE K -25K</td>
+          </tr>
+          <tr>
+            <th scope="row">15662</th>
+            <td>ÁLGEBRA LINEAL</td>
+            <td>3</td>
+            <td>GUILLERMO CERVANTEZ</td>
+            <td>BLOQUE I -I2-21</td>
+          </tr>
+        </tbody>
+      </table>
+      <a href="{{url_for('landingEstudiante')}}"> 
+        <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
+        Volver a la pantalla principal
+        </button>
+        </a>
+    
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</html>
