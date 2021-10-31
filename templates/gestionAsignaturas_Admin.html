@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-  <title>Gestion actividades y notas</title>
+  <title>Control de usuarios</title>
   <link rel="stylesheet" 
   href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
   integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
@@ -17,59 +17,36 @@
 <div class="container">
   <br>
   <br>
-  <h1 class="font-weight-bold">Gestiona actividades y notas</h1>
+  <h1 class="font-weight-bold">Gestión de asignaturas</h1>
   <hr class="bg-white">
   <div class="card-deck mt-5">
   <div class="card">
     <div class="card-body">
-    <img src="../static/images/actividad.png" class="img-fluid" alt="Actividades" height="260">
+    <img src="../static/images/subject.png" class="img-fluid" alt="Actividades" height="200">
     <br>
     <br>
-    <h5 class="card-subtitle" align="center">Panel de actividades</h5>
-    <a href="{{url_for('crearActividad_Admin')}}"> 
+    <h5 class="card-subtitle" align="center">Panel de control de asignaturas</h5>
+    <a href="{{url_for('crearAsignatura_Admin')}}"> 
     <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-      Crear actividades
+      Crear asignatura
     </button>
     </a>
-    <a href="{{url_for('consultarActividad_Admin')}}"> 
+    <a href="{{url_for('buscarAsignatura_Admin')}}"> 
     <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-        Consultar actividades
+        Buscar asignatura
       </button>
       </a>
-      <a href="{{url_for('actualizarActividad_Admin')}}"> 
+      <a href="{{url_for('editarAsignatura_Admin')}}"> 
       <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-       Actualizar actividades
+       Editar asignatura
       </button>
       </a>
-      <a href="{{url_for('eliminarActividad_Admin')}}"> 
+      <a href="{{url_for('eliminarAsignatura_Admin')}}"> 
       <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-        Eliminar actividades
+        Eliminar asignatura
       </button>
       </a>
 
-  </div>
-  </div>
-  <div class="card">
-    <div class="card-body">
-    <img src="../static/images/grade.png" class="img-fluid" alt="Notas">
-    <br>
-    <br>
-    <h5 class="card-subtitle" align="center">Panel de notas</h5>
-    <a href="{{url_for('crearNota_Admin')}}"> 
-    <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-    Asignar notas
-    </button>
-    </a>
-    <a href="{{url_for('consultarNota_Admin')}}"> 
-    <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-    Consultar notas
-    </button>
-    </a>
-    <a href="{{url_for('actualizarNota_Admin')}}"> 
-    <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
-    Actualizar notas
-    </button>
-    </a>
   </div>
   </div>
   <a href="{{url_for('landingAdministrador')}}"> 

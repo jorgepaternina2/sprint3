@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ 	<title>Buscar Usuario</title>
+ 	<meta charset="utf-8">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+ 	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">		
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="../static/css/createActivity.css">
+
+</head>
+
+<body>	
+<div class="container">
+	<div class="row">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h1 class="text-center mt-5 font-weight-bold">Buscar Usuario</h1>
+			<hr class="bg-white">
+			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
+			<form>
+			</div>
+			</div>					
+			<div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Código de usuario<br>
+					<input type="number" id="text" required="" placeholder="Ingrese el código del usuario que desea buscar"></label>
+                <label class="col-md-4">Nombre de usuario<br>
+                    <input type="text" id="text" required="" placeholder="Ingrese el nombre de usuario que desea buscar"></label>
+			</div>
+						<div class="row">
+				<div class="col-md-3"></div>
+				<button class="btn btn-primary" style="width: 53.5%; position: center;">Buscar usuario</button>
+			</div>
+        </form>
+            <div class="card-deck mt-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="card-body">
+                  <!-- <img src="../sttic/images/estudiante.png" class="img-fluid" alt="Información" height="260"> -->
+                 
+                  <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">CÓDIGO DE USUARIO</th>
+                          <th scope="col">NOMBRE DE USUARIO</th>
+                          <th scope="col">NOMBRE</th>
+                          <th scope="col">PRIMER APELLIDO</th>
+                          <th scope="col">SEGUNDO APELLIDO</th>
+                          <th scope="col">ROL</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>jpaterninal</td>
+                          <td>Jorge</td>
+                          <td>Paternina</td>
+                          <td>Montiel</td>
+                          <td>Administrador</td>
+                    
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>carolina.balaguera</td>
+                          <td>Carolina</td>
+                          <td>Balaguera</td>
+                          <td>Mintic</td>
+                          <td>Administrador</td>
+                    
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>kevin.barrios</td>
+                          <td>Kevin</td>
+                          <td>Barrios</td>
+                          <td>Mintic</td>
+                          <td>Administrador</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">4</th>
+                          <td>marta.balaguera</td>
+                          <td>Marta</td>
+                          <td>Balaguera</td>
+                          <td>Cano</td>
+                          <td>Administrador</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>julio.profe</td>
+                          <td>Julio</td>
+                          <td>Profe</td>
+                          <td>Profe</td>
+                          <td>Profesor</td>
+                        </tr>
+
+                        <tr>
+                          <th scope="row">5</th>
+                          <td>pablo.dominguez</td>
+                          <td>Pablo</td>
+                          <td>Dominguez</td>
+                          <td>Dominguez</td>
+                          <td>Estudiante</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+                </div>
+                </div>
+              </div>
+			
+      <div class="container">
+				<div class="row">
+					<div class="col-md-2"></div>
+					<div class="col-md-8">
+			<div class="card-footer text-center">
+			<a href="{{url_for('gestionUsuarios_Admin')}}"> 
+			<button id="btnDash" type="submit" class="btn btn-primary" style="width: 50%; position: center;">
+                Volver al panel de control de usuarios
+            </button>
+			</a>
+		</div>
+	</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>  

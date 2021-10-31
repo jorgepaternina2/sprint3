@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
- 	<title>Buscar Actividad</title>
+ 	<title>Buscar Notas</title>
  	<meta charset="utf-8">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
@@ -17,22 +17,27 @@
 	<div class="row">
 		<div class="col-md-2"></div>
 		<div class="col-md-8">
-			<h1 class="text-center mt-5 font-weight-bold">Buscar Actividad</h1>
+			<h1 class="text-center mt-5 font-weight-bold">Buscar Notas</h1>
 			<hr class="bg-white">
 			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
-			<form  action="" method="POST">
+			<form>
 			</div>
 			</div>					
 			<div class="row">
 				<div class="col-md-2"></div>
-				<label class="col-md-4">Código de la asignatura*<br>
+				<label class="col-md-4">Código de estudiante<br>
 					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
-                <label class="col-md-4">Código de actividad*<br>
+                <label class="col-md-4">Código de asignatura*<br>
                     <input type="number" id="text" required="" placeholder="Ingrese el código que qasignó a su actividad"></label>
+			</div>
+            <div class="row">
+				<div class="col-md-2"></div>
+				<label class="col-md-4">Código de actividad*<br>
+					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
 			</div>
 						<div class="row">
 				<div class="col-md-3"></div>
-				<button class="btn btn-primary" style="width: 53.5%; position: center;">Buscar actividad</button>
+				<button class="btn btn-primary" style="width: 53.5%; position: center;">Buscar notas</button>
 			</div>
             <div class="card-deck mt-5">
                 <div class="card" style="width: 18rem;">
@@ -43,35 +48,45 @@
                       <thead>
                         <tr>
                           <th scope="col">CÓDIGO DE ASIGNATURA</th>
+                          <th scope="col">CÓDIGO DE ESTUDIANTE</th>
+                          <th scope="col">NOMBRE DE ESTUDIANTE</th>
                           <th scope="col">CÓDIGO DE ACTIVIDAD</th>
                           <th scope="col">NOMBRE DE ACTIVIDAD</th>
-                          <th scope="col">DESCRIPCIÓN</th>
+                          <th scope="col">NOTA</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
                           <th scope="row">2</th>
-                          <td>1</td>
-                          <td>ALGORITMOS SIMPLES</td>
+                          <td>5</td>
+                          <td>Pablo Dominguez Dominguez</td>
+                          <td>2</td>
                           <td>Algoritmo simple para contar ocurrencias de un evento</td>
+                          <td>4.0</td>
                     
                         </tr>
                         <!-- <tr>
                           <th scope="row">15661</th>
-                          <td>00005</td>
-                          <td>DERIVADAS PARCIALES</td>
+                          <td>200170455</td>
+                          <td>FULANO DE TALES</td>
+                          <td>000087</td>
                           <td>Resolución de ejercicios prácticos</td>
+                          <td>5.0</td>
                     
                         </tr>
                         <tr>
                           <th scope="row">15662</th>
-                          <td>00006</td>
-                          <td>VECTORES EN R3</td>
+                          <td>000014</td>
+                          <td>SUTANITO RESTREPO</td>
+                          <td>200170455</td>
                           <td>Resolución de ejercicios prácticos</td>
-                    
+                          <td>3.8</td>
                         </tr> -->
                       </tbody>
                     </table>
+                  <!-- <button id="btnDash" type="submit" class="btn btn-block btn-primary mt-3">
+                    Volver a la pantalla principal
+                  </button> -->
                 </div>
                 </div>
                 </div>

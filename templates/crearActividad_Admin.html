@@ -15,50 +15,44 @@
 <body>	
 
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-2"></div>
-		<div class="col-md-8">
-			
-			<h1 class="text-center mt-5 font-weight-bold">Crear Actividad</h1>
-			<hr class="bg-white">
-			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
-		
-
-			<form>
-			
-
-			</div>
-			</div>					
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-4">Nombre de la actividad*<br>
-					<input type="text" id="text" required="" placeholder="Escriba el nombre de la actividad"></label>
-			</div>
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-4">Código de la asignatura*<br>
-					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
-                <label class="col-md-4">Código de actividad*<br>
-                    <input type="number" id="text" required="" placeholder="Ingrese el código que quiere asignar a su actividad"></label>
-			</div>
-
-			<div class="row">
-				<div class="col-md-2"></div>
-				<label class="col-md-8">Descripción de la actividad*<br>
-					<textarea id="descripcion" required="" placeholder="Escriba una breve descripción en este espacio" cols="48" rows="5"></textarea></label>
-			</div>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				
+				<h1 class="text-center mt-5 font-weight-bold">Crear Actividad</h1>
+				<hr class="bg-white">
+				<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
+				<form action="" method="POST">
+				</div>
+				</div>					
+	
 				<div class="row">
-				<div class="col-md-3"></div>
-				<button class="btn btn-primary" style="width: 53.5%; position: center;">Crear actividad</button>
-                <br>
-                </div>
-                <br>
-			</div>
-			</form>
+					<div class="col-md-2"></div>
+					<label class="col-md-4">Nombre de la actividad*<br>
+						<input type="text" name = "nombreActividad" id="text" required="" placeholder="Escriba el nombre de la actividad"></label>
+				</div>
+	
+				<div class="row">
+					<div class="col-md-2"></div>
+					<label class="col-md-4">Código de la asignatura*<br>
+						<input type="number" id="text" name = "codigoAsignatura"  required="" placeholder="Ingrese un código válido de asignatura"></label>
+				</div>
+	
+				<div class="row">
+					<div class="col-md-2"></div>
+					<label class="col-md-8">Descripción de la actividad*<br>
+						<textarea id="descripcion" required="" name = "descripcionActividad"  placeholder="Escriba una breve descripción en este espacio" cols="48" rows="5"></textarea></label>
+				</div>
+	
+					<div class="row">
+					<div class="col-md-3"></div>
+					<button class="btn btn-primary" type="submit" style="width: 53.5%; position: center;">Crear actividad</button>
+					<br>
+					</div>
+					<br>
+				</div>
+				</form>
 			<!-- <div class="row">
                 <div class="col-md-3"></div>
 				<a href="{{url_for('gestionActividades_Profesor')}}"></a>

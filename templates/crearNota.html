@@ -18,26 +18,26 @@
 			<h1 class="text-center mt-5 font-weight-bold">Registro de Notas</h1>
 			<hr class="bg-white">
 			<h6 class="text-center">Por favor diligencie los campos requeridos debajo</h6>
-			<form>
+			<form action="" method="GET"> 
 			</div>
 			</div>					
                 <div class="row">
                     <div class="col-md-2"></div>
                     <label class="col-md-4">Código de la asignatura*<br>
-                        <input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
+                        <input type="number" id="text" name="codigoAsignatura" required="" placeholder="Ingrese un código válido de asignatura"></label>
                     <label class="col-md-4">Código de actividad*<br>
-                        <input type="number" id="text" required="" placeholder="Ingrese el código que qasignó a su actividad"></label>
+                        <input type="number" id="text" name="codigoActividad" required="" placeholder="Ingrese el código que qasignó a su actividad"></label>
                 </div>
 			<div class="row">
 				<div class="col-md-2"></div>
 				<label class="col-md-4">Código de estudiante*<br>
-					<input type="number" id="text" required="" placeholder="Ingrese un código válido de asignatura"></label>
+					<input type="number" id="text" name="codigoEstudiante" required="" placeholder="Ingrese un código válido de asignatura"></label>
                     <label class="col-md-4">Nota del estudiante<br>
-                        <input type="number" id="text" required="" placeholder="Ingrese la calificación del estudiante"></label>
+                        <input type="number" id="text" name="notaEstudiante" required="" placeholder="Ingrese la calificación del estudiante"></label>
 			</div>
 				<div class="row">
 				<div class="col-md-3"></div>
-				<button class="btn btn-primary" style="width: 53.5%; position: center;">Registrar nota</button>
+				<button class="btn btn-primary" type="submit" style="width: 53.5%; position: center;">Registrar nota</button>
                 <br>
                 </div>
                 <br>
